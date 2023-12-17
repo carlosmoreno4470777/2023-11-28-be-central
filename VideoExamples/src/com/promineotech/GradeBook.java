@@ -20,15 +20,18 @@ public class GradeBook {
 		sc.nextLine();
 
 		for (int i = 0; i < programmingStudents.length; i++) {
-		int[] grades = new int[numOfGrades];
-		System.out.print("Enter Student's Full Name: ");
-		fullName = sc.nextLine();
-		for (int j = 0; j < grades.length; j++) {
-		System.out.print("Enter a grade: ");
-		grades[j] = sc.nextInt();
-		}
-		programmingStudents[i] = new Student(fullName, grades);
-		sc.nextLine();
+			
+			int[] grades = new int[numOfGrades];
+			System.out.print("Enter Student's Full Name: ");
+			fullName = sc.nextLine();
+			
+			for (int j = 0; j < grades.length; j++) {
+				System.out.print("Enter a grade: ");
+				grades[j] = sc.nextInt();
+			}
+			
+			programmingStudents[i] = new Student(fullName, grades);
+			sc.nextLine();
 		}
 
 		System.out.println("\n\n"+lineVariable+"\n " 
